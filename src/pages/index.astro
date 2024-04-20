@@ -1,14 +1,51 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Button from '../components/Button.astro';
-import ButtonTwo from '../components/ButtonTwo.astro';
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import ButtonTwo from "../components/ButtonTwo.astro";
+import Profile from "../components/Profile.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <Button/>
+  <Button />
+  
   <ButtonTwo rounded>
     <h1 slot="text">Hola</h1>
     <h1 slot="icon">X</h1>
-    <h1 slot="text">Hola2</h1>
-  <ButtonTwo/>
+    <h1 slot="text">g</h1>
+  </ButtonTwo>
 </Layout>
+
+<div class="flex justify-around items-center w-full h-full overflow-y-scroll">
+  <Profile
+    imgSrc="/src/imgs/Profile.jpg"
+    name="Charlotte"
+    job="Role"
+    phone="Generic number"
+    skill1="No se"
+    skill2="No se"
+    skill3="No se"
+    skill4="No se"
+  ></Profile>
+
+  <Profile
+    imgSrc="/src/imgs/Profile.jpg"
+    name="Charise"
+    job="Role"
+    phone="Generic number"
+    skill1="No se"
+    skill2="No se"
+    skill3="No se"
+    skill4="No se"
+  ></Profile>
+
+  <Profile
+    imgSrc="/src/imgs/Profile.jpg"
+    name="Liam"
+    job="Role"
+    phone="Generic number"
+    skill1="No se"
+    skill2="No se"
+    skill3="No se"
+    skill4="No se"
+  ></Profile>
+</div>
